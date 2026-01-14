@@ -44,7 +44,7 @@ body{
   color:#ccc;
 }
 
-/* GRID MAPEL */
+/* GRID MAPEL / CARDS */
 .mapel-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -58,7 +58,7 @@ body{
   background:#000;
   border:1px solid #222;
   border-radius:14px;
-  padding:32px 16px;
+  padding:24px 16px;
   text-align:center;
   color:#fff;
   text-decoration:none;
@@ -70,9 +70,14 @@ body{
   border-color:#00ff99;
 }
 
+.mapel-card img{
+  height:50px;
+  margin-bottom:12px;
+}
+
 .mapel-card h3{
-  margin-top:12px;
   font-size:18px;
+  margin-top:8px;
 }
 
 /* FOOTER */
