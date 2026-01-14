@@ -2,71 +2,42 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>ELKAPEDE SMP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELKAPEDE SMP | Flipbook</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="top-header">
-  <div class="header-logos">
-    <img src="assets/logo-elkapede.png" alt="ELKAPEDE" class="logo">
-    <img src="assets/logo-gph.png" alt="GPH" class="logo">
-    <img src="assets/logo-gubel.png" alt="Gubuk Belajar" class="logo">
-    <img src="assets/logo-garuda.png" alt="Garuda" class="logo">
+<header>
+  <div class="logo-row">
+    <img src="assets/logo-elkapede.png" alt="ELKAPEDE">
+    <img src="assets/logo-gph.png" alt="GPH">
+    <img src="assets/logo-gubel.png" alt="Gubuk Belajar">
+    <img src="assets/logo-garuda.png" alt="GARUDA">
   </div>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="sd.html">SD</a>
-    <a href="smp.html" class="active">SMP</a>
-  </nav>
+  <h1>SMP — Pilih Kelas</h1>
 </header>
 
-<section class="hero">
-  <h1>ELKAPEDE SMP</h1>
-  <p>Flipbook digital eksklusif jenjang SMP untuk wilayah Pati.<br>
-     Tersedia juga untuk daerah lain yang ingin ikut.</p>
-</section>
+<main>
+  <section class="mapel-grid">
+    <!-- Kelas 7–9 -->
+    <a class="mapel-card" href="https://online.fliphtml5.com/ELKADIGI/ELKAPEDE-7-KKA/" target="_blank">
+      <img src="assets/icon-smp.png" alt="SMP">
+      <h3>Kelas 7 — Tersedia</h3>
+    </a>
+    <a class="mapel-card disabled" title="Belum tersedia / Order dulu">
+      <img src="assets/icon-smp-locked.png" alt="SMP">
+      <h3>Kelas 8</h3>
+    </a>
+    <a class="mapel-card disabled" title="Belum tersedia / Order dulu">
+      <img src="assets/icon-smp-locked.png" alt="SMP">
+      <h3>Kelas 9</h3>
+    </a>
+  </section>
+</main>
 
-<section class="mapel-grid" id="smp-jenjang">
-  <h2>Pilih Kelas SMP (7–9)</h2>
-
-  <!-- Kelas tersedia -->
-  <a class="mapel-card" href="#" onclick="showSMPKelas7(); return false;">
-    <img src="assets/icon-smp.png" alt="SMP">
-    <h3>Kelas 7 — Tersedia</h3>
-  </a>
-
-  <!-- Kelas belum tersedia -->
-  <a class="mapel-card disabled" title="Belum tersedia / Order dulu"><h3>Kelas 8</h3></a>
-  <a class="mapel-card disabled" title="Belum tersedia / Order dulu"><h3>Kelas 9</h3></a>
-</section>
-
-<section class="mapel-grid" id="smp-kelas7" style="display:none;">
-  <h2>SMP Kelas 7</h2>
-
-  <a class="mapel-card" href="https://online.fliphtml5.com/ELKADIGI/ELKAPEDE-7-INDONESIA-S2/" target="_blank">📘 Bahasa Indonesia</a>
-  <a class="mapel-card" href="https://online.fliphtml5.com/ELKADIGI/ELKAPEDE-7-IPA-S2/" target="_blank">🧪 IPA</a>
-  <a class="mapel-card" href="https://online.fliphtml5.com/ELKADIGI/ELKAPEDE-7-MATEMATIKA-S2/" target="_blank">📐 Matematika</a>
-  <a class="mapel-card" href="https://online.fliphtml5.com/ELKADIGI/rwvh/" target="_blank">💻 Koding & AI (KKA)</a>
-  <a class="mapel-card" href="https://online.fliphtml5.com/ELKADIGI/ELKAPEDE-7-IPS-S2/" target="_blank">🌍 IPS</a>
-
-  <button class="mapel-card" onclick="backToSMPJenjang()">⬅ Kembali ke SMP</button>
-</section>
-
-<script>
-function showSMPKelas7(){
-  document.getElementById('smp-jenjang').style.display='none';
-  document.getElementById('smp-kelas7').style.display='grid';
-}
-function backToSMPJenjang(){
-  document.getElementById('smp-jenjang').style.display='grid';
-  document.getElementById('smp-kelas7').style.display='none';
-}
-</script>
-
-<footer class="footer">
-  <p>© 2026 Gubuk Pustaka Harmoni · ELKAPEDE</p>
+<footer>
+  © 2026 CV Gubuk Pustaka Harmoni • ELKAPEDE untuk Pendidikan Indonesia
 </footer>
 
 </body>
