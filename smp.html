@@ -1,170 +1,58 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ELKAPEDE | SMP</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      color: #333;
-    }
-
-    /* ===== HEADER ===== */
-    header {
-      background: #000;
-      color: #fff;
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    header img {
-      height: 50px;
-      margin: 0 6px;
-      vertical-align: middle;
-    }
-
-    h1 {
-      margin: 15px 0 6px;
-      font-size: 24px;
-    }
-
-    .subtitle {
-      font-size: 14px;
-      opacity: 0.85;
-    }
-
-    /* ===== MAIN ===== */
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 20px;
-      margin-bottom: 25px;
-    }
-
-    .btn {
-      display: block;
-      max-width: 520px;
-      margin: 12px auto;
-      padding: 14px;
-      background: #ffffff;
-      border-radius: 10px;
-      text-decoration: none;
-      color: #000;
-      font-size: 16px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      transition: 0.2s;
-    }
-
-    .btn:hover {
-      background: #eaeaea;
-      transform: translateY(-2px);
-    }
-
-    .note {
-      text-align: center;
-      margin-top: 30px;
-      font-size: 14px;
-      color: #666;
-      line-height: 1.6;
-    }
-
-    .back {
-      text-align: center;
-      margin-top: 35px;
-    }
-
-    .back a {
-      text-decoration: none;
-      font-weight: bold;
-      color: #000;
-    }
-
-    /* ===== FOOTER ===== */
-    footer {
-      text-align: center;
-      padding: 25px;
-      font-size: 13px;
-      color: #777;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>ELKAPEDE SMP</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- ===== HEADER ===== -->
-  <header>
-    <div>
-      <img src="assets/img/logo-elkapede.png" alt="ELKAPEDE">
-      <img src="assets/img/logo-gph.png" alt="GPH">
-      <img src="assets/img/logo-garuda.png" alt="GARUDA">
-    </div>
+<header class="top-header">
+  <img src="assets/img/logo-elkapede.png" alt="ELKAPEDE" class="logo">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="sd.html">SD</a>
+    <a href="smp.html" class="active">SMP</a>
+  </nav>
+</header>
 
-    <h1>Flipbook ELKAPEDE – SMP</h1>
-    <div class="subtitle">
-      Portal Pembelajaran Digital • Akses sesuai wilayah implementasi
-    </div>
-  </header>
+<section class="hero">
+  <h1>ELKAPEDE SMP</h1>
+  <p>Buku digital interaktif jenjang SMP – Kurikulum Merdeka</p>
+</section>
 
-  <!-- ===== MAIN ===== -->
-  <main>
+<section class="mapel-grid">
 
-    <div class="section-title">Daftar Mata Pelajaran SMP</div>
+  <a class="mapel-card" href="https://online.fliphtml5.com/ELKADIGI/ELKAPEDE-7-INDONESIA-S2/" target="_blank">
+    📘
+    <h3>Bahasa Indonesia</h3>
+  </a>
 
-    <a class="btn"
-       href="https://online.fliphtml5.com/ELKADIGI/rwvh/"
-       target="_blank">
-      💻 Koding & Kecerdasan Artifisial (KKA)
-    </a>
+  <a class="mapel-card" href="https://online.fliphtml5.com/ELKADIGI/ELKAPEDE-7-IPA-S2/" target="_blank">
+    🧪
+    <h3>IPA</h3>
+  </a>
 
-    <a class="btn"
-       href="https://online.fliphtml5.com/ELKADIGI/ELKAPEDE-7-MATEMATIKA-S2/"
-       target="_blank">
-      📐 Matematika
-    </a>
+  <a class="mapel-card" href="https://online.fliphtml5.com/ELKADIGI/ELKAPEDE-7-MATEMATIKA-S2/" target="_blank">
+    📐
+    <h3>Matematika</h3>
+  </a>
 
-    <a class="btn"
-       href="https://online.fliphtml5.com/ELKADIGI/ELKAPEDE-7-IPA-S2/"
-       target="_blank">
-      🔬 IPA
-    </a>
+  <a class="mapel-card" href="https://online.fliphtml5.com/ELKADIGI/rwvh/" target="_blank">
+    💻
+    <h3>Koding & AI (KKA)</h3>
+  </a>
 
-    <a class="btn"
-       href="https://online.fliphtml5.com/ELKADIGI/ELKAPEDE-7-IPS-S2/"
-       target="_blank">
-      🌍 IPS
-    </a>
+  <a class="mapel-card" href="https://online.fliphtml5.com/ELKADIGI/ELKAPEDE-7-IPS-S2/" target="_blank">
+    🌍
+    <h3>IPS</h3>
+  </a>
 
-    <a class="btn"
-       href="https://online.fliphtml5.com/ELKADIGI/ELKAPEDE-7-INDONESIA-S2/"
-       target="_blank">
-      📘 Bahasa Indonesia
-    </a>
+</section>
 
-    <div class="note">
-      Konten ELKAPEDE SMP diaktifkan berdasarkan wilayah kerja sama.<br>
-      Daerah lain dapat bergabung melalui program implementasi ELKAPEDE.
-    </div>
-
-    <div class="back">
-      <a href="index.html">⬅ Kembali ke Beranda</a>
-    </div>
-
-  </main>
-
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    © 2026 CV Gubuk Pustaka Harmoni • ELKAPEDE
-  </footer>
+<footer class="footer">
+  <p>© 2026 Gubuk Pustaka Harmoni · ELKAPEDE</p>
+</footer>
 
 </body>
 </html>
