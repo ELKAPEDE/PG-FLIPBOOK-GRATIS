@@ -67,6 +67,18 @@ nav a.active {
   transform: translateY(-2px);
 }
 
+.mapel-card.disabled {
+  background:#222;
+  opacity:0.5;
+  cursor:not-allowed;
+  pointer-events:none;
+}
+
+.mapel-card.disabled:hover {
+  transform: none;
+  background:#222;
+}
+
 footer.footer {
   text-align:center;
   padding:20px 0;
