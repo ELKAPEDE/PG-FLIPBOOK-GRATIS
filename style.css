@@ -1,5 +1,14 @@
+/* RESET & BODY */
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#111; /* hitam full */
+  color:#fff;
+}
+
+/* HEADER */
 .top-header{
-  background:#000;
+  background:#000; /* hitam full */
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -14,20 +23,28 @@
 
 .top-header nav a:hover,
 .top-header nav a.active{
-  color:#00ff99;
+  color:#00ff99; /* aksen hijau GPH */
 }
 
 .logo{
   height:40px;
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero{
   text-align:center;
   padding:56px 16px;
 }
 
-/* GRID */
+.hero h1{
+  margin-bottom:8px;
+}
+
+.hero p{
+  color:#ccc;
+}
+
+/* GRID MAPEL */
 .mapel-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -53,8 +70,15 @@
   border-color:#00ff99;
 }
 
+.mapel-card h3{
+  margin-top:12px;
+  font-size:18px;
+}
+
+/* FOOTER */
 .footer{
   text-align:center;
   padding:24px;
   color:#777;
+  font-size:14px;
 }
