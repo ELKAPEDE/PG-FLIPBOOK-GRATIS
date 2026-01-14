@@ -1,90 +1,47 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ELKAPEDE | Flipbook Pegangan Guru</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GARUDA – Gubuk Pustaka Harmoni</title>
 
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-  <div class="logo-group">
-    <img src="assets/LOGO-GPH.png" alt="Gubuk Pustaka Harmoni" class="logo">
-    <img src="assets/LOGO-GUBEL.jpg" alt="Gubuk Belajar" class="logo">
-    <img src="assets/LOGO-ELKAPEDE.png" alt="ELKAPEDE" class="logo">
-    <img src="assets/LOGO-GARUDA.png" alt="GARUDA" class="logo">
-  </div>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo-group">
+      <img src="assets/logo-gph.png" alt="Gubuk Pustaka Harmoni">
+      <img src="assets/logo-gubel.png" alt="Gubuk Belajar">
+      <img src="assets/logo-garuda.png" alt="GARUDA">
+    </div>
 
-  <h1>Flipbook Pegangan Guru ELKAPEDE</h1>
+    <h1 class="title">GARUDA</h1>
+    <p class="subtitle">
+      Generasi Rajin, Unggul, dan Berdaya Saing<br>
+      Inisiatif pembelajaran digital oleh CV Gubuk Pustaka Harmoni
+    </p>
 
-  <p class="subtitle">
-    Platform pembelajaran digital oleh CV Gubuk Pustaka Harmoni
-  </p>
+    <p class="note">
+      Konten <strong>eksklusif untuk Kabupaten Pati</strong><br>
+      Terbuka untuk daerah lain yang ingin berkolaborasi
+    </p>
+  </header>
 
-  <p class="note">
-    Program ini mengusung semangat <strong>GARUDA — Generasi Rajin, Unggul, dan Berdaya Saing</strong>
-    sebagai nilai penguatan karakter pembelajaran.
-  </p>
+  <!-- JENJANG -->
+  <section class="jenjang">
+    <div class="card">
+      <img src="assets/icon-sd.png" alt="SD">
+      <span>SD</span>
+    </div>
 
-  <p class="exclusive">
-    Saat ini ELKAPEDE digunakan secara terbatas di Kabupaten Pati.
-    Daerah lain dapat bergabung dan mengadaptasi layanan ini sesuai kebutuhan masing-masing.
-  </p>
-</header>
-
-<main>
-
-  <section id="jenjang">
-    <h2>Pilih Jenjang Pendidikan</h2>
-    <button class="btn" onclick="showSD()">Sekolah Dasar (SD)</button>
-    <button class="btn" disabled>SMP — segera hadir</button>
+    <div class="card">
+      <img src="assets/icon-smp.png" alt="SMP">
+      <span>SMP</span>
+    </div>
   </section>
-
-  <section id="sd" class="hidden">
-    <h2>SD — Pilih Kelas</h2>
-    <button class="btn" onclick="showKelas5()">Kelas 5</button>
-    <button class="btn secondary" onclick="backToJenjang()">⬅ Kembali</button>
-  </section>
-
-  <section id="kelas5" class="hidden">
-    <h2>Flipbook ELKAPEDE SD Kelas 5</h2>
-
-    <a class="btn" href="https://online.fliphtml5.com/ELKADIGI/pfab/" target="_blank">📘 Koding & Kecerdasan Artifisial</a>
-    <a class="btn" href="https://online.fliphtml5.com/ELKADIGI/PG-LKS-ELKAPEDE-BAHASA-INDONESIA-SD-5-S2/" target="_blank">📗 Bahasa Indonesia</a>
-    <a class="btn" href="https://online.fliphtml5.com/ELKADIGI/PG-LKS-ELKAPEDE-INGGRIS-SD-5-S2/" target="_blank">📕 Bahasa Inggris</a>
-    <a class="btn" href="https://online.fliphtml5.com/ELKADIGI/PG-LKS-ELKAPEDE-IPAS-SD-5-S2/" target="_blank">📙 IPAS</a>
-    <a class="btn" href="https://online.fliphtml5.com/ELKADIGI/whgk/" target="_blank">📒 Matematika</a>
-
-    <button class="btn secondary" onclick="backToSD()">⬅ Kembali</button>
-  </section>
-
-</main>
-
-<footer>
-  © 2026 CV Gubuk Pustaka Harmoni • ELKAPEDE untuk Pendidikan Indonesia
-</footer>
-
-<script>
-  function showSD() {
-    document.getElementById("jenjang").classList.add("hidden");
-    document.getElementById("sd").classList.remove("hidden");
-  }
-  function showKelas5() {
-    document.getElementById("sd").classList.add("hidden");
-    document.getElementById("kelas5").classList.remove("hidden");
-  }
-  function backToJenjang() {
-    document.getElementById("sd").classList.add("hidden");
-    document.getElementById("jenjang").classList.remove("hidden");
-  }
-  function backToSD() {
-    document.getElementById("kelas5").classList.add("hidden");
-    document.getElementById("sd").classList.remove("hidden");
-  }
-</script>
 
 </body>
 </html>
