@@ -1,75 +1,123 @@
 body {
-  margin:0;
   font-family: Arial, sans-serif;
-  background-color:#000; /* full hitam */
-  color:#fff;
+  background: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-.top-header {
-  text-align:center;
-  padding:20px 10px;
+/* HEADER */
+header {
+  background: #000; /* full hitam */
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
 }
 
-.header-logos img.logo {
-  height:40px;
-  object-fit:contain;
-  margin:0 8px;
+header .logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-nav a {
-  color:#fff;
-  margin:0 12px;
-  text-decoration:none;
-  font-weight:bold;
+header .logo-row img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
 }
 
-nav a.active {
-  text-decoration:underline;
+/* MAIN */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 15px;
 }
 
-.hero {
-  text-align:center;
-  margin:30px 10px;
+.section-title {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
 }
 
+/* JENJANG BUTTONS */
+.jenjang-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: white;
+  color: #333;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  transition: 0.2s;
+}
+
+.btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.btn:hover {
+  background: #eef5ff;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* MAPEL GRID SD & SMP */
 .mapel-grid {
-  display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
-  gap:16px;
-  max-width:900px;
-  margin:0 auto 40px auto;
-  padding:0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+  justify-items: center;
+  margin-top: 20px;
 }
 
 .mapel-card {
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  background:#111;
-  padding:16px;
-  border-radius:12px;
-  text-align:center;
-  color:#fff;
-  font-weight:bold;
-  cursor:pointer;
-  text-decoration:none;
-  transition:0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  text-decoration: none;
+  color: #333;
+  width: 100%;
+  max-width: 160px;
+  text-align: center;
 }
 
 .mapel-card img {
-  height:50px;
-  margin-bottom:10px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }
 
-.mapel-card:hover {
-  background:#222;
+.mapel-card.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.mapel-card:hover:not(.disabled) {
   transform: translateY(-2px);
-}
-
-footer.footer {
-  text-align:center;
-  padding:20px 0;
-  font-size:14px;
-  color:#aaa;
+  background: #eef5ff;
+  transition: 0.2s;
 }
