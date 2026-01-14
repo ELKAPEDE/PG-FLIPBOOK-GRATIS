@@ -1,150 +1,75 @@
-/* ===== GENERAL RESET ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
+  margin:0;
   font-family: Arial, sans-serif;
-  background: #000; /* full hitam */
-  color: #fff;
-  line-height: 1.5;
+  background-color:#000; /* full hitam */
+  color:#fff;
 }
 
-/* ===== HEADER ===== */
-header {
-  background: #000;
-  color: #fff;
-  text-align: center;
-  padding: 20px 10px;
+.top-header {
+  text-align:center;
+  padding:20px 10px;
 }
 
-header .logo-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
+.header-logos img.logo {
+  height:40px;
+  object-fit:contain;
+  margin:0 8px;
 }
 
-header .logo-row img {
-  height: 50px;
-  object-fit: contain;
+nav a {
+  color:#fff;
+  margin:0 12px;
+  text-decoration:none;
+  font-weight:bold;
 }
 
-header h1 {
-  font-size: 26px;
-  margin-bottom: 6px;
+nav a.active {
+  text-decoration:underline;
 }
 
-header .subtitle {
-  font-size: 14px;
-  opacity: 0.85;
-  margin-bottom: 5px;
+.hero {
+  text-align:center;
+  margin:30px 10px;
 }
 
-header .motto {
-  font-size: 13px;
-  opacity: 0.8;
-}
-
-/* ===== SECTION TITLE ===== */
-.section-title {
-  text-align: center;
-  font-size: 20px;
-  margin: 25px 0;
-}
-
-/* ===== GRID KELAS & MAPEL ===== */
-.kelas-grid, .mapel-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.kelas-card, .mapel-card {
-  background: #111;
-  color: #fff;
-  padding: 15px;
-  border-radius: 10px;
-  text-align: center;
-  text-decoration: none;
-  box-shadow: 0 4px 8px rgba(255,255,255,0.05);
-  transition: 0.2s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.kelas-card:hover, .mapel-card:hover {
-  background: #222;
-  transform: translateY(-2px);
-}
-
-.kelas-card.disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.kelas-card.available {
-  cursor: pointer;
-}
-
-.kelas-card img, .mapel-card img {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  margin-bottom: 8px;
+.mapel-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+  gap:16px;
+  max-width:900px;
+  margin:0 auto 40px auto;
+  padding:0 20px;
 }
 
 .mapel-card {
-  font-size: 14px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  background:#111;
+  padding:16px;
+  border-radius:12px;
+  text-align:center;
+  color:#fff;
+  font-weight:bold;
+  cursor:pointer;
+  text-decoration:none;
+  transition:0.2s;
 }
 
-/* ===== BACK BUTTON ===== */
-.back {
-  text-align: center;
-  margin: 30px 0;
+.mapel-card img {
+  height:50px;
+  margin-bottom:10px;
 }
 
-.back a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.2s;
+.mapel-card:hover {
+  background:#222;
+  transform: translateY(-2px);
 }
 
-.back a:hover {
-  text-decoration: underline;
-}
-
-/* ===== FOOTER ===== */
-footer {
-  background: #000;
-  color: #888;
-  text-align: center;
-  padding: 20px;
-  font-size: 13px;
-  margin-top: 40px;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 500px) {
-  header h1 {
-    font-size: 22px;
-  }
-  .section-title {
-    font-size: 18px;
-  }
-  .kelas-card, .mapel-card {
-    padding: 12px;
-    font-size: 13px;
-  }
+footer.footer {
+  text-align:center;
+  padding:20px 0;
+  font-size:14px;
+  color:#aaa;
 }
