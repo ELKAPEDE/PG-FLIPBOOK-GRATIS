@@ -13,6 +13,7 @@ body {
 .header-logos img.logo {
   height:40px;
   object-fit:contain;
+  margin:0 8px;
 }
 
 nav a {
@@ -53,6 +54,7 @@ nav a.active {
   font-weight:bold;
   cursor:pointer;
   text-decoration:none;
+  transition:0.2s;
 }
 
 .mapel-card img {
@@ -62,6 +64,7 @@ nav a.active {
 
 .mapel-card:hover {
   background:#222;
+  transform: translateY(-2px);
 }
 
 footer.footer {
