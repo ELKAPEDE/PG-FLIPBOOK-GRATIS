@@ -1,123 +1,48 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ELKAPEDE | SD</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      color: #333;
-    }
-
-    header {
-      background: #000;
-      color: #fff;
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    header img {
-      height: 50px;
-      margin: 0 8px;
-      vertical-align: middle;
-    }
-
-    h1 {
-      margin: 15px 0 5px;
-      font-size: 24px;
-    }
-
-    .subtitle {
-      font-size: 14px;
-      opacity: 0.9;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 20px;
-      margin-bottom: 25px;
-    }
-
-    .btn {
-      display: block;
-      max-width: 500px;
-      margin: 12px auto;
-      padding: 14px;
-      background: #fff;
-      border-radius: 10px;
-      text-decoration: none;
-      color: #000;
-      font-size: 16px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      transition: 0.2s;
-    }
-
-    .btn:hover {
-      background: #eaeaea;
-      transform: translateY(-2px);
-    }
-
-    .back {
-      margin-top: 30px;
-      text-align: center;
-    }
-
-    footer {
-      text-align: center;
-      padding: 25px;
-      font-size: 13px;
-      color: #777;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-  <div>
-    <img src="assets/img/logo-elkapede.png" alt="ELKAPEDE">
-    <img src="assets/img/logo-gph.png" alt="GPH">
-    <img src="assets/img/logo-garuda.png" alt="GARUDA">
+  <div class="logo-row">
+    <img src="assets/logo-elkapede.png" alt="ELKAPEDE">
+    <img src="assets/logo-gph.png" alt="GPH">
+    <img src="assets/logo-gubel.png" alt="Gubuk Belajar">
+    <img src="assets/logo-garuda.png" alt="GARUDA">
   </div>
   <h1>Flipbook ELKAPEDE – SD</h1>
   <div class="subtitle">
-    Akses khusus wilayah implementasi • Portal Resmi ELKAPEDE
+    Portal Pembelajaran Digital • Akses khusus wilayah implementasi Pati
+  </div>
+  <div class="motto">
+    GARUDA — Generasi Rajin, Unggul, dan Berdaya Saing
   </div>
 </header>
 
 <main>
-  <div class="section-title">SD Kelas 5</div>
+  <div class="section-title">Pilih Kelas</div>
 
-  <a class="btn" href="https://online.fliphtml5.com/ELKADIGI/pfab/" target="_blank">
-    📘 Koding & Kecerdasan Artifisial
-  </a>
+  <div class="kelas-grid">
+    <a href="#" class="kelas-card disabled">Kelas 1<br>(Belum ada order)</a>
+    <a href="#" class="kelas-card disabled">Kelas 2<br>(Belum ada order)</a>
+    <a href="#" class="kelas-card disabled">Kelas 3<br>(Belum ada order)</a>
+    <a href="#" class="kelas-card disabled">Kelas 4<br>(Belum ada order)</a>
+    <a href="#" class="kelas-card available" data-kelas="5">Kelas 5<br>(Tersedia)</a>
+    <a href="#" class="kelas-card disabled">Kelas 6<br>(Belum ada order)</a>
+  </div>
 
-  <a class="btn" href="https://online.fliphtml5.com/ELKADIGI/PG-LKS-ELKAPEDE-BAHASA-INDONESIA-SD-5-S2/" target="_blank">
-    📗 Bahasa Indonesia
-  </a>
-
-  <a class="btn" href="https://online.fliphtml5.com/ELKADIGI/PG-LKS-ELKAPEDE-INGGRIS-SD-5-S2/" target="_blank">
-    📕 Bahasa Inggris
-  </a>
-
-  <a class="btn" href="https://online.fliphtml5.com/ELKADIGI/PG-LKS-ELKAPEDE-IPAS-SD-5-S2/" target="_blank">
-    📙 IPAS
-  </a>
-
-  <a class="btn" href="https://online.fliphtml5.com/ELKADIGI/whgk/" target="_blank">
-    📒 Matematika
-  </a>
+  <div id="mapel-container" class="mapel-grid" style="display:none; margin-top:30px;">
+    <a href="https://online.fliphtml5.com/ELKADIGI/pfab/" class="mapel-card">📘 Koding & Kecerdasan Artifisial</a>
+    <a href="https://online.fliphtml5.com/ELKADIGI/PG-LKS-ELKAPEDE-BAHASA-INDONESIA-SD-5-S2/" class="mapel-card">📗 Bahasa Indonesia</a>
+    <a href="https://online.fliphtml5.com/ELKADIGI/PG-LKS-ELKAPEDE-INGGRIS-SD-5-S2/" class="mapel-card">📕 Bahasa Inggris</a>
+    <a href="https://online.fliphtml5.com/ELKADIGI/PG-LKS-ELKAPEDE-IPAS-SD-5-S2/" class="mapel-card">📙 IPAS</a>
+    <a href="https://online.fliphtml5.com/ELKADIGI/whgk/" class="mapel-card">📒 Matematika</a>
+  </div>
 
   <div class="back">
     <a href="index.html">⬅ Kembali ke Beranda</a>
@@ -125,8 +50,16 @@
 </main>
 
 <footer>
-  © 2026 CV Gubuk Pustaka Harmoni • ELKAPEDE
+  © 2026 CV Gubuk Pustaka Harmoni • ELKAPEDE – Eksklusif Pati
 </footer>
+
+<script>
+document.querySelectorAll('.kelas-card.available').forEach(card => {
+  card.addEventListener('click', () => {
+    document.getElementById('mapel-container').style.display = 'grid';
+  });
+});
+</script>
 
 </body>
 </html>
