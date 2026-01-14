@@ -23,7 +23,7 @@ header .logo-row {
 }
 
 header .logo-row img {
-  height: 50px;  /* semua logo proporsional */
+  height: 50px;
   width: auto;
   object-fit: contain;
 }
@@ -41,48 +41,34 @@ main {
   margin-bottom: 20px;
 }
 
-/* MAPEL GRID */
-.mapel-grid {
+/* JENJANG BUTTONS */
+.jenjang-buttons {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.mapel-card {
+.btn {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  width: 100px;
-  padding: 10px;
-  background: #f7f7f7;
-  border-radius: 10px;
-  text-decoration: none;
+  gap: 8px;
+  padding: 10px 16px;
+  background: white;
   color: #333;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
   transition: 0.2s;
 }
 
-.mapel-card img {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 6px;
+.btn img {
+  width: 30px;
+  height: 30px;
 }
 
-.mapel-card h3 {
-  font-size: 13px;
-  text-align: center;
-  margin: 0;
-}
-
-.mapel-card.disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.mapel-card:hover:not(.disabled) {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+.btn:hover {
+  background: #eef5ff;
 }
 
 /* FOOTER */
