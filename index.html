@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ELKAPEDE | Flipbook Pegangan Guru</title>
 
   <link rel="stylesheet" href="style.css">
@@ -12,71 +12,54 @@
 
 <header>
   <div class="logo-group">
-    <img src="assets/logo-gph.png" alt="Gubuk Pustaka Harmoni" class="logo">
-    <img src="assets/logo-gubuk-belajar.png" alt="Gubuk Belajar" class="logo">
-    <img src="assets/logo-garuda.png" alt="GARUDA" class="logo">
+    <img src="assets/LOGO-GPH.png" alt="Gubuk Pustaka Harmoni" class="logo">
+    <img src="assets/LOGO-GUBEL.jpg" alt="Gubuk Belajar" class="logo">
+    <img src="assets/LOGO-ELKAPEDE.png" alt="ELKAPEDE" class="logo">
+    <img src="assets/LOGO-GARUDA.png" alt="GARUDA" class="logo">
   </div>
 
   <h1>Flipbook Pegangan Guru ELKAPEDE</h1>
 
   <p class="subtitle">
-    Inovasi pembelajaran digital oleh CV Gubuk Pustaka Harmoni
+    Platform pembelajaran digital oleh CV Gubuk Pustaka Harmoni
   </p>
 
   <p class="note">
-    Program ini mengusung semangat <strong>GARUDA — Generasi Rajin, Unggul, dan Berdaya Saing</strong>,  
-    sebagai nilai penguatan karakter dalam pembelajaran.
+    Program ini mengusung semangat <strong>GARUDA — Generasi Rajin, Unggul, dan Berdaya Saing</strong>
+    sebagai nilai penguatan karakter pembelajaran.
   </p>
 
   <p class="exclusive">
-    Saat ini layanan ELKAPEDE <strong>digunakan secara terbatas untuk wilayah Kabupaten Pati</strong>.  
-    Daerah lain dapat bergabung dan mengadaptasi program ini sesuai kebutuhan masing-masing.
+    Saat ini ELKAPEDE digunakan secara terbatas di Kabupaten Pati.
+    Daerah lain dapat bergabung dan mengadaptasi layanan ini sesuai kebutuhan masing-masing.
   </p>
 </header>
 
 <main>
 
-  <div id="jenjang">
+  <section id="jenjang">
     <h2>Pilih Jenjang Pendidikan</h2>
-
     <button class="btn" onclick="showSD()">Sekolah Dasar (SD)</button>
     <button class="btn" disabled>SMP — segera hadir</button>
-  </div>
+  </section>
 
-  <div id="sd" class="hidden">
+  <section id="sd" class="hidden">
     <h2>SD — Pilih Kelas</h2>
-
     <button class="btn" onclick="showKelas5()">Kelas 5</button>
-    <button class="btn" disabled>Kelas lainnya menyusul</button>
-
     <button class="btn secondary" onclick="backToJenjang()">⬅ Kembali</button>
-  </div>
+  </section>
 
-  <div id="kelas5" class="hidden">
+  <section id="kelas5" class="hidden">
     <h2>Flipbook ELKAPEDE SD Kelas 5</h2>
 
-    <a class="btn" href="https://online.fliphtml5.com/ELKADIGI/pfab/" target="_blank">
-      📘 Koding & Kecerdasan Artifisial
-    </a>
-
-    <a class="btn" href="https://online.fliphtml5.com/ELKADIGI/PG-LKS-ELKAPEDE-BAHASA-INDONESIA-SD-5-S2/" target="_blank">
-      📗 Bahasa Indonesia
-    </a>
-
-    <a class="btn" href="https://online.fliphtml5.com/ELKADIGI/PG-LKS-ELKAPEDE-INGGRIS-SD-5-S2/" target="_blank">
-      📕 Bahasa Inggris
-    </a>
-
-    <a class="btn" href="https://online.fliphtml5.com/ELKADIGI/PG-LKS-ELKAPEDE-IPAS-SD-5-S2/" target="_blank">
-      📙 IPAS
-    </a>
-
-    <a class="btn" href="https://online.fliphtml5.com/ELKADIGI/whgk/" target="_blank">
-      📒 Matematika
-    </a>
+    <a class="btn" href="https://online.fliphtml5.com/ELKADIGI/pfab/" target="_blank">📘 Koding & Kecerdasan Artifisial</a>
+    <a class="btn" href="https://online.fliphtml5.com/ELKADIGI/PG-LKS-ELKAPEDE-BAHASA-INDONESIA-SD-5-S2/" target="_blank">📗 Bahasa Indonesia</a>
+    <a class="btn" href="https://online.fliphtml5.com/ELKADIGI/PG-LKS-ELKAPEDE-INGGRIS-SD-5-S2/" target="_blank">📕 Bahasa Inggris</a>
+    <a class="btn" href="https://online.fliphtml5.com/ELKADIGI/PG-LKS-ELKAPEDE-IPAS-SD-5-S2/" target="_blank">📙 IPAS</a>
+    <a class="btn" href="https://online.fliphtml5.com/ELKADIGI/whgk/" target="_blank">📒 Matematika</a>
 
     <button class="btn secondary" onclick="backToSD()">⬅ Kembali</button>
-  </div>
+  </section>
 
 </main>
 
@@ -89,17 +72,14 @@
     document.getElementById("jenjang").classList.add("hidden");
     document.getElementById("sd").classList.remove("hidden");
   }
-
   function showKelas5() {
     document.getElementById("sd").classList.add("hidden");
     document.getElementById("kelas5").classList.remove("hidden");
   }
-
   function backToJenjang() {
     document.getElementById("sd").classList.add("hidden");
     document.getElementById("jenjang").classList.remove("hidden");
   }
-
   function backToSD() {
     document.getElementById("kelas5").classList.add("hidden");
     document.getElementById("sd").classList.remove("hidden");
