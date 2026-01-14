@@ -1,17 +1,9 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #fff;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
-
 /* HEADER */
 header {
   background: #000; /* full hitam */
   color: white;
   text-align: center;
-  padding: 30px 20px;
+  padding: 25px 15px;
 }
 
 header .logo-row {
@@ -23,32 +15,16 @@ header .logo-row {
 }
 
 header .logo-row img {
-  height: 50px;
+  height: 45px;       /* ukuran logo lebih pas */
+  width: auto;        /* proporsional */
   object-fit: contain;
-}
-
-h1 {
-  margin-top: 10px;
-  font-size: 28px;
-}
-
-.subtitle, .motto {
-  font-size: 14px;
-  margin-top: 5px;
-  opacity: 0.9;
 }
 
 /* MAIN */
 main {
   max-width: 900px;
   margin: 30px auto;
-  padding: 0 20px;
-}
-
-.section-title {
-  text-align: center;
-  font-size: 22px;
-  margin-bottom: 20px;
+  padding: 0 15px;
 }
 
 /* JENJANG BUTTONS */
@@ -62,14 +38,19 @@ main {
 .btn {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 12px 20px;
+  gap: 8px;
+  padding: 10px 16px;
   background: white;
   color: #333;
   text-decoration: none;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
   transition: 0.2s;
+}
+
+.btn img {
+  width: 30px;       /* ukuran ikon jenjang */
+  height: 30px;
 }
 
 .btn:hover {
@@ -81,15 +62,15 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 12px;
 }
 
 .mapel-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 120px;
-  padding: 12px;
+  width: 100px;       /* kotak mapel */
+  padding: 10px;
   background: #f7f7f7;
   border-radius: 10px;
   text-decoration: none;
@@ -99,9 +80,15 @@ main {
 }
 
 .mapel-card img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
+  width: 40px;       /* ikon kelas */
+  height: 40px;
+  margin-bottom: 6px;
+}
+
+.mapel-card h3 {
+  font-size: 13px;
+  text-align: center;
+  margin: 0;
 }
 
 .mapel-card.disabled {
@@ -120,5 +107,5 @@ footer {
   font-size: 14px;
   color: #666;
   padding: 20px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
