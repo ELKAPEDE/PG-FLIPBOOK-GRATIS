@@ -1,3 +1,11 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
 /* HEADER */
 header {
   background: #000; /* full hitam */
@@ -15,8 +23,8 @@ header .logo-row {
 }
 
 header .logo-row img {
-  height: 45px;       /* ukuran logo lebih pas */
-  width: auto;        /* proporsional */
+  height: 45px;
+  width: auto;
   object-fit: contain;
 }
 
@@ -25,6 +33,12 @@ main {
   max-width: 900px;
   margin: 30px auto;
   padding: 0 15px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
 }
 
 /* JENJANG BUTTONS */
@@ -49,7 +63,7 @@ main {
 }
 
 .btn img {
-  width: 30px;       /* ukuran ikon jenjang */
+  width: 30px;
   height: 30px;
 }
 
@@ -69,7 +83,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100px;       /* kotak mapel */
+  width: 100px;
   padding: 10px;
   background: #f7f7f7;
   border-radius: 10px;
@@ -80,7 +94,7 @@ main {
 }
 
 .mapel-card img {
-  width: 40px;       /* ikon kelas */
+  width: 40px;
   height: 40px;
   margin-bottom: 6px;
 }
