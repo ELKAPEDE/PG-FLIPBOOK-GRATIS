@@ -1,49 +1,144 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ELKAPEDE | GARUDA</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ELKAPEDE | Portal Resmi</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: #000;
+      color: #fff;
+      padding: 35px 20px;
+      text-align: center;
+    }
+
+    header img {
+      height: 55px;
+      margin: 0 8px;
+      vertical-align: middle;
+    }
+
+    h1 {
+      margin: 15px 0 6px;
+      font-size: 26px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      opacity: 0.85;
+      line-height: 1.5;
+    }
+
+    /* ===== MAIN ===== */
+    main {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      display: inline-block;
+      width: 260px;
+      margin: 15px;
+      padding: 25px 20px;
+      background: #fff;
+      border-radius: 14px;
+      text-decoration: none;
+      color: #000;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      background: #eaeaea;
+    }
+
+    .card img {
+      height: 70px;
+      margin-bottom: 15px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .card-desc {
+      font-size: 14px;
+      margin-top: 8px;
+      opacity: 0.8;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
 </head>
+
 <body>
 
-<header class="header">
-  <div class="logo-row">
-    <img src="assets/logo-elkapede.png" alt="ELKAPEDE" class="logo-main">
-    <img src="assets/logo-gph.png" alt="Gubuk Pustaka Harmoni">
-    <img src="assets/logo-gubel.png" alt="Gubuk Belajar">
-    <img src="assets/logo-garuda.png" alt="GARUDA">
-  </div>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div>
+      <img src="assets/img/logo-elkapede.png" alt="ELKAPEDE">
+      <img src="assets/img/logo-gph.png" alt="GPH">
+      <img src="assets/img/logo-garuda.png" alt="GARUDA">
+    </div>
 
-  <h1>ELKAPEDE – GARUDA</h1>
+    <h1>Portal Digital ELKAPEDE</h1>
+    <div class="subtitle">
+      Platform pembelajaran berbasis flipbook & video<br>
+      Akses disesuaikan dengan wilayah implementasi
+    </div>
+  </header>
 
-  <p class="tagline">
-    Generasi Rajin, Unggul, dan Berdaya Saing<br>
-    Inovasi pembelajaran digital oleh CV Gubuk Pustaka Harmoni
-  </p>
+  <!-- ===== MAIN ===== -->
+  <main>
 
-  <p class="exclusive">
-    Konten pembelajaran ini digunakan secara terbatas di Kabupaten Pati<br>
-    dan terbuka untuk daerah lain yang ingin berkolaborasi
-  </p>
-</header>
+    <div class="section-title">Pilih Jenjang Pendidikan</div>
 
-<main class="menu">
-  <a href="#" class="menu-card">
-    <img src="assets/icon-sd.png" alt="SD">
-    <span>Sekolah Dasar (SD)</span>
-  </a>
+    <a class="card" href="sd.html">
+      <img src="assets/img/icon-sd.png" alt="SD">
+      <div class="card-title">Sekolah Dasar (SD)</div>
+      <div class="card-desc">
+        Akses flipbook ELKAPEDE jenjang SD
+      </div>
+    </a>
 
-  <a href="#" class="menu-card disabled">
-    <img src="assets/icon-smp.png" alt="SMP">
-    <span>SMP (Segera Hadir)</span>
-  </a>
-</main>
+    <a class="card" href="smp.html">
+      <img src="assets/img/icon-smp.png" alt="SMP">
+      <div class="card-title">Sekolah Menengah Pertama (SMP)</div>
+      <div class="card-desc">
+        Akses flipbook ELKAPEDE jenjang SMP
+      </div>
+    </a>
 
-<footer>
-  © 2026 CV Gubuk Pustaka Harmoni • ELKAPEDE
-</footer>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    © 2026 CV Gubuk Pustaka Harmoni • ELKAPEDE
+  </footer>
 
 </body>
 </html>
