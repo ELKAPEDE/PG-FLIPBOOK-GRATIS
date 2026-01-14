@@ -31,10 +31,18 @@
 <section class="mapel-grid" id="sd-jenjang">
   <h2>Pilih Kelas SD (1–6)</h2>
 
+  <!-- Kelas tersedia -->
   <a class="mapel-card" href="#" onclick="showSDKelas5(); return false;">
     <img src="assets/icon-sd.png" alt="SD">
     <h3>Kelas 5 — Tersedia</h3>
   </a>
+
+  <!-- Kelas belum tersedia -->
+  <a class="mapel-card disabled" title="Belum tersedia / Order dulu"><h3>Kelas 1</h3></a>
+  <a class="mapel-card disabled" title="Belum tersedia / Order dulu"><h3>Kelas 2</h3></a>
+  <a class="mapel-card disabled" title="Belum tersedia / Order dulu"><h3>Kelas 3</h3></a>
+  <a class="mapel-card disabled" title="Belum tersedia / Order dulu"><h3>Kelas 4</h3></a>
+  <a class="mapel-card disabled" title="Belum tersedia / Order dulu"><h3>Kelas 6</h3></a>
 </section>
 
 <section class="mapel-grid" id="sd-kelas5" style="display:none;">
@@ -51,8 +59,9 @@
 
 <script>
 function showSDKelas5(){
-  document.getElementById('sd-jenjang').style.display='none';
+  document.getElementById('sd-jenjang').style.display='grid';
   document.getElementById('sd-kelas5').style.display='grid';
+  document.getElementById('sd-jenjang').style.display='none';
 }
 function backToSDJenjang(){
   document.getElementById('sd-jenjang').style.display='grid';
